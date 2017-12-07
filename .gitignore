@@ -2,6 +2,7 @@
 target
 build
 .gradle
+out/
 
 # Project files #
 .project
