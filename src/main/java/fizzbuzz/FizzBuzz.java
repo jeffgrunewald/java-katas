@@ -18,6 +18,7 @@ public class FizzBuzz {
             String strElem;
             switch (intElem) {
                 case 3: strElem = "fizz";
+                case 5: strElem = "buzz";
                     break;
                 default: strElem = intElem.toString();
                     break;
