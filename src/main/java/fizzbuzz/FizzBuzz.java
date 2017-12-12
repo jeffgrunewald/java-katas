@@ -16,12 +16,13 @@ public class FizzBuzz {
     public List<String> convert() {
         for(Integer intElem: this.input) {
             String strElem;
-            switch (intElem) {
-                case 3: strElem = "fizz";
-                case 5: strElem = "buzz";
-                    break;
-                default: strElem = intElem.toString();
-                    break;
+            if (intElem % 5 == 0) {
+                strElem = "buzz";
+            } else if ( intElem % 3 == 0) {
+                strElem = "fizz";
+            }
+            else {
+                strElem = intElem.toString();
             }
             this.output.add(strElem);
         }
