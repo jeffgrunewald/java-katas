@@ -15,7 +15,13 @@ public class FizzBuzz {
 
     public List<String> convert() {
         for(Integer intElem: this.input) {
-            String strElem = intElem.toString();
+            String strElem;
+            switch (intElem) {
+                case 3: strElem = "fizz";
+                    break;
+                default: strElem = intElem.toString();
+                    break;
+            }
             this.output.add(strElem);
         }
         return this.output;
