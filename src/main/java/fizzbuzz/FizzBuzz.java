@@ -16,7 +16,9 @@ public class FizzBuzz {
     public List<String> convert() {
         for(Integer intElem: this.input) {
             String strElem;
-            if (intElem % 5 == 0) {
+            if (intElem % 5 == 0 && intElem % 3 == 0) {
+                strElem = "fizzbuzz";
+            } else if (intElem % 5 == 0) {
                 strElem = "buzz";
             } else if ( intElem % 3 == 0) {
                 strElem = "fizz";
