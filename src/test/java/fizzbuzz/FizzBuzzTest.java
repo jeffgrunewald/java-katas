@@ -26,4 +26,9 @@ public class FizzBuzzTest {
         FizzBuzz tester3 = new FizzBuzz(asList(3));
         assertEquals(asList("fizz"), tester3.convert());
     }
+    @Test
+    public void supplyFiveGetBuzz() {
+        FizzBuzz tester4 = new FizzBuzz(asList(5));
+        assertEquals(asList("buzz"), tester4.convert());
+    }
 }

@@ -3,6 +3,7 @@ target
 build
 .gradle
 out/
+java_katas.iws
 
 # Project files #
 .project
