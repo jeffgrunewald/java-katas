@@ -2,6 +2,9 @@ package fizzbuzz;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class FizzBuzz {
 
@@ -20,10 +23,8 @@ public class FizzBuzz {
     }
 
     public static List<String> game(List<Integer> input) {
-        List<String> output = new ArrayList<>();
-        input.stream()
-                .map(intElem -> convert(intElem))
-                .forEachOrdered(output::add);
-        return output;
+        return input.stream()
+                .map(FizzBuzz::convert)
+                .collect(toList());
     }
 }
