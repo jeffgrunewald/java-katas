@@ -21,10 +21,9 @@ public class FizzBuzz {
 
     public static List<String> game(List<Integer> input) {
         List<String> output = new ArrayList<>();
-        for(Integer intElem: input) {
-            output.add(convert(intElem));
-        }
+        input.stream()
+                .map(intElem -> convert(intElem))
+                .forEachOrdered(output::add);
         return output;
     }
-
 }
